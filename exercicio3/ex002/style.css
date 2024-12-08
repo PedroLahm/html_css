@@ -1,0 +1,23 @@
+@charset "UTF-8";
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(3, 173, 173);
+}
+
+h1{
+    font-size: 30pt;
+    text-align: center;
+    background-color: darkcyan;
+    padding: 20px;
+    margin: -10px;
+    color: goldenrod;
+    border: 2px goldenrod solid;
+}
+
+#corpo{
+    text-align: justify;
+    text-indent: 10px;
+    color: azure;
+    margin-top: 50px;
+}
