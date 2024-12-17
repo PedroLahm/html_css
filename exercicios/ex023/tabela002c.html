@@ -14,13 +14,36 @@
             width: 500px;
             
             border-collapse: collapse;
+
+            position: relative;
+        }
+
+        caption{
+            background-color: lightgray;
+
+            font-size: 1.5em;
+            font-weight: bold;
+
+            padding: 10px;
+        }
+
+        thead{
+            position: sticky;
+            top: 0;
+            background-color: #3e3e3e;
         }
 
         thead, tfoot{
-            background-color: gray;
+            background-color: #3e3e3e;
             color: white;
 
+            font-size: 17px;
+
             padding: 8px;
+        }
+
+        tbody tr:nth-child(even){
+            background-color: lightgray;
         }
 
         td, th{
@@ -28,6 +51,7 @@
 
             padding: 8px;
         }
+
         td.populacao{
             text-align: right;
         }
@@ -38,10 +62,11 @@
     <h1>Tabelas Complexas</h1>
 
     <table>
+        <caption>População por Unidade Federativa</caption>
         <thead>
             <tr>
-                <th>Estado</th>
-                <th>População</th>
+                <th scope="col">Estado</th>
+                <th scope="col" style="width: 100px;">População</th>
             </tr>
         </thead>
         
@@ -157,7 +182,7 @@
         </tbody>
 
         <tfoot>
-            <th>Total de habitantes</th>
+            <th scope="row">Total de habitantes</th>
             <td class="populacao"><strong>212 583 720</strong></td>
         </tfoot>
     </table>
