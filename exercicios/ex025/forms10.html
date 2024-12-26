@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style>
+        *{
+            font-family: arial;
+        }
+        h1{
+            font-size: 46px;
+        }
+        p{
+            font-size: 20px;
+        }
+    </style>
+
+    <script defer>
+        function calcularIdade(){
+            let idadeAtual = Number(2024) - Number(iano.value); 
+            iidade.innerHTML = Number(idadeAtual);
+        }
+    </script>
+
+    <title>Output</title>
+</head>
+<body>
+    <h1>Output</h1>
+
+    <form action="cadastro.php" method="post" autocomplete="on">
+        
+        <p>
+            <label for="iano">Ano de nascimento: </label>
+            <input type="number" name="ano" id="iano" min="1900" max="2024" oninput="calcularIdade()" required>
+        </p>
+
+        <p>
+            <label for="iidade">Idade: </label>
+            <output id="iidade">0</output>
+        </p>
+
+        <p>
+            <input type="button" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+
+    </form>
+</body>
+</html>
