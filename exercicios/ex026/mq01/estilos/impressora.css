@@ -1,0 +1,31 @@
+@charset "UTF-8";
+
+/*Estilo para impressora*/
+
+html{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1em;
+    line-height: 1em;
+    
+    width: 100%;
+}
+
+menu{
+    display: none;
+}
+
+article h2{
+    text-align: center;
+}
+
+article p{
+    text-align: justify;
+}
+
+main::after{
+    font-size: 14px;
+    font-weight: bold;
+    text-decoration: underline;
+    
+    content: 'Esse artigo foi desenvolvido por Pedro Linhares Trevisan Lahm';
+}
