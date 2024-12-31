@@ -19,7 +19,7 @@ header h1{
     padding: 15px;
 }
 
-span.material-symbols-outlined{
+span#burguer{
     display: block;
     color: white;
     background-color: rgb(48, 48, 48);
@@ -28,7 +28,7 @@ span.material-symbols-outlined{
     cursor: pointer;
 }
 
-span.material-symbols-outlined:hover{
+span#burguer:hover{
     background-color: rgb(79, 79, 79);
 }
 
