@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexible Box</title>
+
+    <style>
+        *{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        div.conteiner{
+            display: flex;
+            flex-flow: row nowrap;
+
+            background-color: lightsalmon;
+            
+        }
+
+        div.item1{
+            flex-basis: 300px;
+            flex-shrink: 0;
+            flex-grow: 0;
+
+            background-color: lightblue;
+            border: 1px solid black;
+
+            text-align: center;
+            height: 50px;
+            padding: 5px;
+        }
+
+        div.item2{
+            flex-basis: 300px;
+            flex-shrink: 1;
+            flex-grow: 0;
+
+            background-color: lightblue;
+            border: 1px solid black;
+
+            text-align: center;
+            height: 50px;
+            padding: 5px;
+        }
+
+        div.item3{
+            flex-basis: 300px;
+            flex-shrink: 0;
+            flex-grow: 1;
+
+            background-color: lightblue;
+            border: 1px solid black;
+
+            text-align: center;
+            height: 50px;
+            padding: 5px;
+        }
+
+        div.item4{
+            flex-basis: 300px;
+            flex-shrink: 1;
+            flex-grow: 1;
+
+            background-color: lightblue;
+            border: 1px solid black;
+
+            text-align: center;
+            height: 50px;
+            padding: 5px;
+        }
+    </style>
+
+</head>
+<body>
+    <h1>Flexible Box</h1>
+
+    <hr>
+    <br>
+
+    <h2>Flex-Shrink: 0 and Flex-Grow: 0</h2>
+    <div class="conteiner">
+        <div class="item1">A</div>
+        <div class="item1">B</div>
+        <div class="item1">C</div>
+    </div>
+
+    <br>
+    <br>
+
+    <h2>Flex-Shrink: 1 and Flex-Grow: 0</h2>
+    <div class="conteiner">
+        <div class="item2">A</div>
+        <div class="item2">B</div>
+        <div class="item2">C</div>
+    </div>
+
+    <br>
+    <br>
+
+    <h2>Flex-Shrink: 0 and Flex-Grow: 1</h2>
+    <div class="conteiner">
+        <div class="item3">A</div>
+        <div class="item3">B</div>
+        <div class="item3">C</div>
+    </div>
+
+    <br>
+    <br>
+
+    <h2>Flex-Shrink: 1 and Flex-Grow: 1</h2>
+    <div class="conteiner">
+        <div class="item4">A</div>
+        <div class="item4">B</div>
+        <div class="item4">C</div>
+    </div>
+</body>
+</html>
